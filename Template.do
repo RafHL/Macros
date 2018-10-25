@@ -8,7 +8,7 @@
 
 # Make changes here primarily:
         # Replace * with preferred signals (only if you DON'T want all signals from
-        #     the testbench to pop up
+        #     the testbench to pop up)
     set signals *
         # Replace 1 with a 0 if you want to see signal's full name (including the path)
     set tinynames 1
