@@ -12,6 +12,6 @@ It takes in the filename as a parameter and then compiles and runs the simulatio
     .v or .vhd into the transcript window (ModelSim's built-in Command Line window)
 - ModelSim should then execute everything in the file sequentially.
 
-##### Note: 
+## Note: 
 AutoHotKey is necessary to compile and/or run the .ahk scripts, which also means
 that a Windows machine is needed to take advantage of them.
