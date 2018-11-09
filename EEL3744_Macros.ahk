@@ -18,6 +18,23 @@ return
 ; Title Template
 ^!t::
 WinGetTitle, File, A ; Get full path and name of current active window
+SendInput, /***{* 76}{Enter}
+SendInput, File: %File%{Enter}
+SendInput, Created: %A_MM%-%A_DD%-%A_YYYY% %A_Hour%:%A_Min%{Enter}
+SendInput, Last Modified: %A_MM%-%A_DD%-%A_YYYY% %A_Hour%:%A_Min%{Enter}
+SendInput, {Enter}
+SendInput, Lab _ Part _{Enter}
+SendInput, Name: %A_UserName%{Enter}
+SendInput, Section {#}: _{Enter}
+SendInput, Class {#}: _{Enter}
+SendInput, TA Name: _{Enter}
+SendInput, Description: _{Enter}
+SendInput, {Backspace}{* 75}***/
+return
+
+; Alternate Title Template
+^!+t::
+WinGetTitle, File, A ; Get full path and name of current active window
 SendInput, /***{- 74}{+}{Enter}
 SendInput, |- File: %File%{Enter}
 SendInput, |- Created: %A_MM%-%A_DD%-%A_YYYY% %A_Hour%:%A_Min%{Enter}
